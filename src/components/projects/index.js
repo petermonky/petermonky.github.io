@@ -40,8 +40,8 @@ const Projects = () => {
                   <span className="projects__project__text-link text-xl">
                     <a href={path} target="_blank" rel="noopener noreferrer">
                       {text}
+                      <ArrowIcon />
                     </a>
-                    <ArrowIcon />
                   </span>
                 ))}
               </div>
