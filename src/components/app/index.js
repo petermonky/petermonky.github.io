@@ -1,12 +1,17 @@
 import "./App.scss";
 
 import Navbar from "../navbar";
+import Introduction from "../introduction";
+import Projects from "../projects";
 
 function App() {
   return (
-    <div className="app">
+    <div>
       <Navbar />
-      <div className="content"></div>
+      <div className="content">
+        <Introduction />
+        <Projects />
+      </div>
     </div>
   );
 }
