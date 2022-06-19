@@ -10,7 +10,7 @@ const Projects = () => {
   const { title, content } = projects;
 
   return (
-    <div className="projects">
+    <section className="projects" id="projects">
       <Heading title={title} />
       {content.map(
         (
@@ -55,7 +55,7 @@ const Projects = () => {
           </div>
         )
       )}
-    </div>
+    </section>
   );
 };
 

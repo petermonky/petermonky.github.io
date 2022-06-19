@@ -7,7 +7,7 @@ const Introduction = () => {
   const { title, description, contacts } = introduction;
 
   return (
-    <section className="content__section introduction">
+    <section className="introduction">
       <Heading title={title} />
       <div className="introduction__description">
         <p className="text-2xl">{description}</p>

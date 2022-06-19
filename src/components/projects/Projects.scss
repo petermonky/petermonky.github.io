@@ -41,12 +41,6 @@
         a {
           display: inline-flex;
           align-items: center;
-
-          &:link,
-          &:visited,
-          &:active {
-            text-decoration: none;
-          }
         }
 
         &:hover {
