@@ -9,6 +9,15 @@ import TinnerImg from "../assets/tinner.png";
 import StepperImg from "../assets/stepper.png";
 import StudiusImg from "../assets/studius.png";
 
+export const navbar = {
+  links: [
+    {
+      title: "Projects",
+      anchor: "projects",
+    },
+  ],
+};
+
 export const introduction = {
   title: "Hi, I'm Peter.",
   description: "An aspiring software engineer and avid student of life.",
