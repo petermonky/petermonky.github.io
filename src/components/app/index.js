@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.scss";
 
 import Footer from "../footer";
@@ -6,6 +7,10 @@ import Navbar from "../navbar";
 import Projects from "../projects";
 
 const App = () => {
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+  }, []);
+
   return (
     <div>
       <Navbar />
