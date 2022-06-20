@@ -69,7 +69,7 @@ export const projects = {
       title: "Tinner",
       descriptions: [
         "Tinner (an anagram of intern), is a CLI-centric application that helps university students organise their internship applications with ease.",
-        "This project was initiated by a group of four, in which I primarily functioned as a UI/UX designer and full stack developer.",
+        "This project was initiated by a group of four, in which I primarily functioned as the UI/UX designer and full stack developer.",
       ],
       img: {
         src: TinnerImg,
