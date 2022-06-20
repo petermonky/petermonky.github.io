@@ -6,6 +6,30 @@
   flex-direction: column;
   justify-content: center;
 
+  .swipe {
+    position: relative;
+    width: fit-content;
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 100%;
+      width: 0;
+      bottom: 0;
+      z-index: 1;
+      background-color: #5865f2;
+      animation: swipe-in 1s ease-out 0.5s forwards;
+    }
+
+    * {
+      opacity: 0;
+      animation: text-in 10ms linear 1s forwards;
+    }
+  }
+
   .introduction__description {
     margin-bottom: 32px;
   }
@@ -17,5 +41,31 @@
     svg {
       font-size: 24px;
     }
+  }
+}
+
+@keyframes swipe-in {
+  0% {
+    width: 0;
+    left: 0;
+    right: 100%;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  100% {
+    width: 0%;
+    left: 100%;
+  }
+}
+
+@keyframes text-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

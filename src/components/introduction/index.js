@@ -8,18 +8,20 @@ const Introduction = () => {
 
   return (
     <section className="introduction">
-      <Heading title={title} />
-      <div className="introduction__description">
-        <p className="text-xl">{description}</p>
-      </div>
-      <div className="introduction__contacts">
-        {contacts.map(({ title, icon, link }) => (
-          <div key={title}>
-            <a href={link} target="_blank" rel="noopener noreferrer">
-              {icon}
-            </a>
-          </div>
-        ))}
+      <div className="swipe">
+        <Heading title={title} />
+        <div className="introduction__description">
+          <p className="text-xl">{description}</p>
+        </div>
+        <div className="introduction__contacts">
+          {contacts.map(({ title, icon, link }) => (
+            <div key={title}>
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                {icon}
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
