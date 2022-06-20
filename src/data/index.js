@@ -1,13 +1,13 @@
 import {
-  BsLinkedin as LinkedinIcon,
-  BsGithub as GithubIcon,
   BsEnvelopeFill as EmailIcon,
+  BsGithub as GithubIcon,
+  BsLinkedin as LinkedinIcon,
 } from "react-icons/bs";
 
 import MinesweeperImg from "../assets/minesweeper.png";
-import TinnerImg from "../assets/tinner.png";
 import StepperImg from "../assets/stepper.png";
 import StudiusImg from "../assets/studius.png";
+import TinnerImg from "../assets/tinner.png";
 
 export const navbar = {
   links: [
@@ -93,7 +93,7 @@ export const projects = {
         src: StepperImg,
         alt: "Stepper",
       },
-      backgroundColour: "#0000FF",
+      backgroundColour: "#090979",
       links: [
         {
           text: "Try demo",
