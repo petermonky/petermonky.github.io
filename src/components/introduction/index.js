@@ -10,7 +10,7 @@ const Introduction = () => {
     <section className="introduction">
       <Heading title={title} />
       <div className="introduction__description">
-        <p className="text-2xl">{description}</p>
+        <p className="text-xl">{description}</p>
       </div>
       <div className="introduction__contacts">
         {contacts.map(({ title, icon, link }) => (
