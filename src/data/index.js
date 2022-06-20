@@ -125,3 +125,23 @@ export const projects = {
     },
   ],
 };
+
+export const footer = {
+  contacts: [
+    {
+      title: "LinkedIn",
+      icon: <LinkedinIcon />,
+      link: "https://www.linkedin.com/in/petermonky/",
+    },
+    {
+      title: "GitHub",
+      icon: <GithubIcon />,
+      link: "https://github.com/petermonky",
+    },
+    {
+      title: "Email",
+      icon: <EmailIcon />,
+      link: "mailto:wjdgustjr0554@gmail.com",
+    },
+  ],
+};

@@ -1,7 +1,8 @@
 import "./App.scss";
 
-import Navbar from "../navbar";
+import Footer from "../footer";
 import Introduction from "../introduction";
+import Navbar from "../navbar";
 import Projects from "../projects";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Introduction />
         <Projects />
       </div>
+      <Footer />
     </div>
   );
 }
