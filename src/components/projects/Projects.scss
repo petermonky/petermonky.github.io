@@ -32,8 +32,6 @@
       }
 
       &-link {
-        transition: border-color 100ms ease;
-        border-bottom: 2px solid transparent;
         display: inline-flex;
         justify-content: space-between;
         width: fit-content;
@@ -44,6 +42,10 @@
         a {
           display: inline-flex;
           align-items: center;
+          border-bottom: 4px solid transparent;
+          background-color: #5865f2;
+          padding: 10px 16px 6px;
+          transition: border-color 100ms ease;
         }
 
         svg {
@@ -53,8 +55,11 @@
         }
 
         &:hover {
-          border-color: white;
           margin-right: 0;
+
+          a {
+            border-color: white;
+          }
 
           svg {
             margin-left: 20px;
