@@ -5,7 +5,7 @@ import Introduction from "../introduction";
 import Navbar from "../navbar";
 import Projects from "../projects";
 
-function App() {
+const App = () => {
   return (
     <div>
       <Navbar />
@@ -16,6 +16,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
