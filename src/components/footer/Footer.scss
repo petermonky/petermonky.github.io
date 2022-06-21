@@ -2,8 +2,11 @@
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  margin: 128px 0 24px;
-  padding: 10px 12vw;
+  align-items: center;
+  margin: 128px auto 32px;
+  max-width: 1440px;
+  width: 90%;
+  padding: 10px 0;
 
   &__links {
     border-bottom: 2px solid transparent;

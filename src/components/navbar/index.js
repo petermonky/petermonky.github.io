@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__name text-2xl">Peter</div>
-      <div className="navbar__links text-2xl">
+      <div className="navbar__links text-xl">
         {links.map(({ title, anchor }) => (
           <AnchorLink key={"title"} href={`#${anchor}`} offset={80}>
             {title}

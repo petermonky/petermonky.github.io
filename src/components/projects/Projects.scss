@@ -1,7 +1,6 @@
 .projects {
   &__project {
-    // background-color: blue;
-    margin: 80px 0;
+    margin-bottom: 80px;
     display: grid;
     align-items: center;
     column-gap: 40px;
@@ -15,17 +14,18 @@
       grid-row: 1 / 2;
 
       &-title {
-        margin-bottom: 24px;
+        margin-bottom: 20px;
       }
 
       &-description {
         color: #99aab5;
-        line-height: 36px;
+        line-height: 30px;
         margin-bottom: 16px;
+        font-weight: normal;
       }
 
       &-link-container {
-        margin-top: 24px;
+        margin-top: 16px;
         display: flex;
         flex-direction: row;
         column-gap: 40px;
@@ -35,16 +35,15 @@
         display: inline-flex;
         justify-content: space-between;
         width: fit-content;
-        margin-bottom: 12px;
         margin-right: 10px;
         transition: margin-right 100ms ease;
 
         a {
           display: inline-flex;
           align-items: center;
-          border-bottom: 4px solid transparent;
+          border-bottom: 3px solid transparent;
           background-color: #5865f2;
-          padding: 10px 16px 6px;
+          padding: 8px 16px 5px;
           transition: border-color 100ms ease;
         }
 

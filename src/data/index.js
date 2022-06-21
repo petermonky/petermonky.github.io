@@ -19,8 +19,14 @@ export const navbar = {
 };
 
 export const introduction = {
-  title: "Hi, I'm Peter.",
-  description: "An aspiring software engineer and avid student of life.",
+  title: "Peter Jung.",
+  description: "Aspiring creator and avid student of life.",
+  distinction: {
+    time: "Currently",
+    status: "interning",
+    organisation: "ByteDance",
+    link: "https://www.bytedance.com/",
+  },
   contacts: [
     {
       title: "LinkedIn",
@@ -108,8 +114,8 @@ export const projects = {
     {
       title: "Studius",
       descriptions: [
-        "Student-to-tutor matchmaking has never been easier with Studius, a platform designed to connect tutors and tutees.",
-        "Studius is my very first web development project. Though somewhat wonky, made with love, nonetheless.",
+        "Student-to-tutor matchmaking has never been easier with Studius, a platform specifically designed to connect tutors and tutees.",
+        "Studius is my very first web development project; somewhat wonky, but made with love nonetheless.",
       ],
       img: {
         src: StudiusImg,

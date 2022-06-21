@@ -2,15 +2,21 @@
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  margin-top: 24px;
-  padding: 10px 12vw;
+  align-items: center;
+  margin: 32px auto 0;
+  max-width: 1440px;
+  width: 90%;
+  padding: 10px 0;
 
   &__links {
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 75ms ease;
+    a {
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 75ms ease;
+      font-weight: normal;
 
-    &:hover {
-      border-color: white;
+      &:hover {
+        border-color: white;
+      }
     }
   }
 }
