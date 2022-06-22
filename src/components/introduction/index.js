@@ -17,9 +17,9 @@ const Introduction = () => {
           <div className="introduction__title">
             <h1 className="text-6xl">{title}</h1>
           </div>
-          <div className="introduction__description">
-            <p className="text-lg">{description}</p>
-            <p className="text-lg">
+          <div className="introduction__description-container">
+            <p className="text-lg introduction__description">{description}</p>
+            <p className="text-lg introduction__description">
               {time} {status} @{" "}
               <a
                 href={link}
