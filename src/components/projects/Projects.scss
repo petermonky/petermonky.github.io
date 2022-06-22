@@ -23,15 +23,20 @@
         margin-bottom: 20px;
       }
 
+      &-description-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        margin-bottom: 20px;
+      }
+
       &-description {
         color: #99aab5;
         line-height: 32px;
-        margin-bottom: 16px;
         font-weight: normal;
       }
 
       &-link-container {
-        margin-top: 16px;
         display: flex;
         flex-direction: row;
         column-gap: 40px;

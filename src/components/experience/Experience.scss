@@ -27,7 +27,7 @@
     list-style: none;
     padding: 0px;
     margin: 0px;
-    margin-top: 16px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     row-gap: 16px;
@@ -38,6 +38,7 @@
     position: relative;
     padding-left: 36px;
     line-height: 32px;
+    color: #99aab5;
 
     &::before {
       content: ">";

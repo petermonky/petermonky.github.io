@@ -39,14 +39,16 @@ const Projects = () => {
                 <div className="projects__project__text-title text-2xl">
                   {title}
                 </div>
-                {descriptions.map((description, idx) => (
-                  <p
-                    key={idx}
-                    className="projects__project__text-description text-lg"
-                  >
-                    {description}
-                  </p>
-                ))}
+                <div className="projects__project__text-description-container">
+                  {descriptions.map((description, idx) => (
+                    <p
+                      key={idx}
+                      className="projects__project__text-description text-lg"
+                    >
+                      {description}
+                    </p>
+                  ))}
+                </div>
                 <div className="projects__project__text-link-container">
                   {links?.map(({ text, path }, idx) => (
                     <span
