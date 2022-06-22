@@ -24,6 +24,8 @@ const Introduction = () => {
               <a
                 href={link}
                 className="introduction__description__organisation"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 {organisation}
               </a>
