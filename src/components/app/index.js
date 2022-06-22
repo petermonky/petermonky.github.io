@@ -3,10 +3,11 @@ import "./App.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Footer from "../footer";
-import Introduction from "../introduction";
 import Navbar from "../navbar";
+import Introduction from "../introduction";
 import Projects from "../projects";
+import Experience from "../experience";
+import Footer from "../footer";
 
 const App = () => {
   useEffect(() => {
@@ -17,9 +18,12 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <div className="content">
+      <div className="layout">
         <Introduction />
-        <Projects />
+        <div className="content">
+          <Experience />
+          <Projects />
+        </div>
       </div>
       <Footer />
     </div>

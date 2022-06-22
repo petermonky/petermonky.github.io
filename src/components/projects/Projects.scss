@@ -1,6 +1,11 @@
 .projects {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+  }
+
   &__project {
-    margin-bottom: 80px;
     display: grid;
     align-items: center;
     column-gap: 40px;
@@ -14,12 +19,13 @@
       grid-row: 1 / 2;
 
       &-title {
+        font-weight: bold;
         margin-bottom: 20px;
       }
 
       &-description {
         color: #99aab5;
-        line-height: 30px;
+        line-height: 32px;
         margin-bottom: 16px;
         font-weight: normal;
       }
@@ -39,6 +45,7 @@
         transition: margin-right 100ms ease;
 
         a {
+          font-weight: bold;
           display: inline-flex;
           align-items: center;
           border-bottom: 3px solid transparent;

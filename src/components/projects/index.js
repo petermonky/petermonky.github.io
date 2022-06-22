@@ -19,58 +19,60 @@ const Projects = () => {
   return (
     <section className="projects" id="projects">
       <Heading title={title} />
-      {content.map(
-        (
-          { title, descriptions, img: { src, alt }, backgroundColour, links },
-          idx
-        ) => (
-          <div
-            key={title}
-            className={clsx(
-              "projects__project",
-              idx % 2 === 0 && "image-right"
-            )}
-            data-aos="fade-up"
-            data-aos-offset="40"
-            data-aos-anchor-placement="top-bottom"
-          >
-            <div className="projects__project__text">
-              <div className="projects__project__text-title text-2xl">
-                {title}
-              </div>
-              {descriptions.map((description, idx) => (
-                <p
-                  key={idx}
-                  className="projects__project__text-description text-lg"
-                >
-                  {description}
-                </p>
-              ))}
-              <div className="projects__project__text-link-container">
-                {links?.map(({ text, path }, idx) => (
-                  <span
-                    key={idx}
-                    className="projects__project__text-link text-lg"
-                  >
-                    <a href={path} target="_blank" rel="noopener noreferrer">
-                      {text}
-                      <ArrowIcon />
-                    </a>
-                  </span>
-                ))}
-              </div>
-            </div>
+      <div className="projects-container">
+        {content.map(
+          (
+            { title, descriptions, img: { src, alt }, backgroundColour, links },
+            idx
+          ) => (
             <div
-              style={{
-                background: generateBackgroundColour(backgroundColour),
-              }}
-              className="projects__project-image"
+              key={title}
+              className={clsx(
+                "projects__project",
+                idx % 2 === 0 && "image-right"
+              )}
+              data-aos="fade-up"
+              data-aos-offset="40"
+              data-aos-anchor-placement="top-bottom"
             >
-              <img src={src} alt={alt} />
+              <div className="projects__project__text">
+                <div className="projects__project__text-title text-2xl">
+                  {title}
+                </div>
+                {descriptions.map((description, idx) => (
+                  <p
+                    key={idx}
+                    className="projects__project__text-description text-lg"
+                  >
+                    {description}
+                  </p>
+                ))}
+                <div className="projects__project__text-link-container">
+                  {links?.map(({ text, path }, idx) => (
+                    <span
+                      key={idx}
+                      className="projects__project__text-link text-lg"
+                    >
+                      <a href={path} target="_blank" rel="noopener noreferrer">
+                        {text}
+                        <ArrowIcon />
+                      </a>
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div
+                style={{
+                  background: generateBackgroundColour(backgroundColour),
+                }}
+                className="projects__project-image"
+              >
+                <img src={src} alt={alt} />
+              </div>
             </div>
-          </div>
-        )
-      )}
+          )
+        )}
+      </div>
     </section>
   );
 };

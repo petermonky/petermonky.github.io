@@ -1,0 +1,48 @@
+.experience {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+  }
+
+  &__title {
+    &-organisation {
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 75ms ease;
+      font-weight: bold;
+
+      &:hover {
+        border-color: white;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-top: 8px;
+    font-weight: normal;
+    color: #99aab5;
+  }
+
+  &__detail-container {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &__detail {
+    font-weight: normal;
+    position: relative;
+    padding-left: 36px;
+    line-height: 32px;
+
+    &::before {
+      content: ">";
+      left: 0;
+      position: absolute;
+    }
+  }
+}

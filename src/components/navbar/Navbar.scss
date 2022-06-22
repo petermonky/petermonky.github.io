@@ -8,11 +8,17 @@
   width: 90%;
   padding: 10px 0;
 
+  &__name {
+    font-weight: bold;
+  }
+
   &__links {
+    display: flex;
     a {
       border-bottom: 2px solid transparent;
       transition: border-bottom 75ms ease;
       font-weight: normal;
+      margin-left: 32px;
 
       &:hover {
         border-color: white;
