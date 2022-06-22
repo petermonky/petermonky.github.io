@@ -82,8 +82,7 @@ export const experience = {
       endDate: "05-2021",
       details: [
         "Debugged, improved, and documented the Stepper tool for the Source Academy.",
-        "The Source Academy is an online learning platform created for and by students at the National University of Singapore, used by over 600 first‑year computer science undergraduate students every year.",
-        "Co‑authored a research paper for the Source Academy Stepper tool and presented a tool demonstration at the online SPLASH‑E 2021 international symposium.",
+        "Co‑authored research paper for the Stepper and presented a tool demonstration at the online SPLASH‑E 2021 international symposium.",
       ],
     },
     {
@@ -94,7 +93,7 @@ export const experience = {
       endDate: "07-2018",
       details: [
         "Learnt fundamentals of front end wire-framing software such as Figma and Photoshop with a group of professional frontend developers and designers.",
-        "Conducted weekly meetings to discuss artistic and functional direction of official E-Mart Mongolia customer website.",
+        "Conducted weekly meetings to discuss artistic and functional direction of E-Mart Mongolia customer website.",
       ],
     },
   ],
@@ -146,7 +145,7 @@ export const projects = {
     {
       title: "Stepper",
       descriptions: [
-        "A step-by-step evaluation visualiser of the JavaScript sublanguage, Source, hosted on the Source Academy.",
+        "A step-by-step evaluation visualiser of the JavaScript sublanguage, Source, hosted on the Source Academy, the learning platform used by over 600 freshman students annually at NUS.",
         "I was given the amazing opportunity to contribute to the development and maintenance of the tool.",
       ],
       img: {
