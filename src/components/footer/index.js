@@ -6,7 +6,7 @@ const Footer = () => {
   const { contacts } = footer;
 
   return (
-    <footer className="footer">
+    <footer className="footer noselect">
       <div className="footer__name text-2xl">Peter</div>
       <div className="footer__contacts">
         {contacts.map(({ title, icon, link }) => (

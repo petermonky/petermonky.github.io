@@ -7,7 +7,7 @@ const Navbar = () => {
   const { links } = navbar;
 
   return (
-    <nav className="navbar">
+    <nav className="navbar noselect">
       <div className="navbar__name text-2xl">Peter</div>
       <div className="navbar__links text-xl">
         {links.map(({ title, anchor }) => (
