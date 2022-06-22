@@ -1,9 +1,11 @@
+@import "../../variables.scss";
+
 .footer {
   background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 128px auto 32px;
+  margin: 0 auto 32px;
   max-width: 1440px;
   width: 90%;
   padding: 10px 0;

@@ -1,11 +1,23 @@
+@import "../../variables.scss";
+
 .experience {
   &-container {
     display: flex;
     flex-direction: column;
-    row-gap: 80px;
+    row-gap: 48px;
+
+    @media only screen and (min-width: $desktop) {
+      row-gap: 80px;
+    }
   }
 
   &__title {
+    &-organisation-wrapper {
+      @media only screen and (min-width: $desktop) {
+        display: inline-block;
+      }
+    }
+
     &-organisation {
       border-bottom: 2px solid transparent;
       transition: border-bottom 75ms ease;
@@ -27,18 +39,28 @@
     list-style: none;
     padding: 0px;
     margin: 0px;
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: 12px;
+    margin-top: 16px;
+
+    @media only screen and (min-width: $desktop) {
+      row-gap: 16px;
+      margin-top: 20px;
+    }
   }
 
   &__detail {
     font-weight: normal;
     position: relative;
-    padding-left: 36px;
-    line-height: 32px;
     color: #99aab5;
+    line-height: 24px;
+    padding-left: 28px;
+
+    @media only screen and (min-width: $desktop) {
+      line-height: 28px;
+      padding-left: 36px;
+    }
 
     &::before {
       content: ">";

@@ -30,17 +30,20 @@ const Experience = () => {
               data-aos-anchor-placement="top-bottom"
             >
               <h2 className="experience__title text-2xl">
-                {distinction} @{" "}
-                <a
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="experience__title-organisation"
-                >
-                  {organisation}
-                </a>
+                {distinction}{" "}
+                <div className="experience__title-organisation-wrapper">
+                  @{" "}
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="experience__title-organisation"
+                  >
+                    {organisation}
+                  </a>
+                </div>
               </h2>
-              <h4 className="experience__subtitle">
+              <h4 className="experience__subtitle text-sm">
                 {`${dayjs(startDate, "MM-YYYY").format("MMM YYYY")}
                - 
               ${

@@ -1,3 +1,9 @@
+@import "../../variables.scss";
+
 .heading {
-  margin-bottom: 48px;
+  margin-bottom: 36px;
+
+  @media only screen and (min-width: $desktop) {
+    margin-bottom: 48px;
+  }
 }

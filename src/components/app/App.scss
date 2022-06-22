@@ -1,13 +1,18 @@
-@import "../../styles/styles.scss";
+@import "../../variables.scss";
 
 .layout {
   margin: 0 12vw;
   max-width: 64rem;
   width: 90%;
   margin: 0 auto;
+
   .content {
     section {
-      margin-bottom: 160px;
+      margin-bottom: 80px;
+
+      @media only screen and (min-width: $desktop) {
+        margin-bottom: 160px;
+      }
     }
   }
 }
