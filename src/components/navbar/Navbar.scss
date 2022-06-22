@@ -5,17 +5,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 32px auto 0;
+  margin: 20px auto 0;
   max-width: 1440px;
   width: 90%;
   padding: 10px 0;
+
+  @media only screen and (min-width: $tablet) {
+    margin-top: 32px;
+  }
 
   &__name {
     font-weight: bold;
   }
 
   &__links {
-    display: flex;
+    display: none;
+
+    @media only screen and (min-width: $tablet) {
+      display: flex;
+    }
+
     a {
       border-bottom: 2px solid transparent;
       transition: border-bottom 75ms ease;
@@ -25,6 +34,21 @@
       &:hover {
         border-color: white;
       }
+    }
+  }
+
+  &__menu {
+    display: flex;
+
+    &-icon {
+      path {
+        // override default package svg colour
+        stroke: white !important;
+      }
+    }
+
+    @media only screen and (min-width: $tablet) {
+      display: none;
     }
   }
 }

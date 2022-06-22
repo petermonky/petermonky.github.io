@@ -1,11 +1,15 @@
 @import "../../variables.scss";
 
 .introduction-container {
-  height: calc(100vh - 84px);
-  padding-bottom: 84px;
+  height: calc(100vh - 72px);
+  padding-bottom: 72px;
   min-height: 600px;
   display: flex;
   flex-direction: column;
+
+  @media only screen and (min-width: $tablet) {
+    height: calc(100vh - 84px);
+  }
 
   .swipe {
     position: relative;

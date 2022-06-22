@@ -24,7 +24,7 @@ export const navbar = {
 
 export const introduction = {
   title: "Peter Jung.",
-  description: "Aspiring creator and avid student of life.",
+  description: "Monkey enthusiast, aspiring creator, and avid student of life.",
   distinction: {
     time: "Currently",
     status: "interning",

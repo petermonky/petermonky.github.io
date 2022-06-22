@@ -2,13 +2,58 @@
 
 .footer {
   background-color: transparent;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   align-items: center;
-  margin: 0 auto 32px;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 auto 20px;
   max-width: 1440px;
   width: 90%;
   padding: 10px 0;
+
+  @media only screen and (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
+
+  &__left-section {
+    grid-column: span 6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media only screen and (min-width: $tablet) {
+      grid-column: span 4;
+    }
+  }
+
+  &__middle-section {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    p {
+      color: #99aab5;
+    }
+
+    @media only screen and (min-width: $tablet) {
+      grid-column: 5 / 9;
+      grid-row: 1 / 2;
+      margin-top: 0;
+    }
+  }
+
+  &__right-section {
+    grid-column: span 6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media only screen and (min-width: $tablet) {
+      grid-column: span 4;
+    }
+  }
 
   &__name {
     font-weight: bold;
@@ -25,10 +70,18 @@
 
   &__contacts {
     display: flex;
-    column-gap: 24px;
+    column-gap: 20px;
 
     svg {
-      font-size: 24px;
+      font-size: 20px;
+    }
+
+    @media only screen and (min-width: $tablet) {
+      column-gap: 24px;
+
+      svg {
+        font-size: 24px;
+      }
     }
   }
 }
