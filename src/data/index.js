@@ -146,7 +146,7 @@ export const projects = {
     {
       title: "Stepper",
       descriptions: [
-        "A step-by-step evaluation visualiser of the JavaScript sublanguage, Source. The platform on which the Stepper is hosted, the Source Academy, is used by over 600 freshman students annually at the National University of Singapore.",
+        "A step-by-step evaluation visualiser of the JavaScript sublanguage, Source, hosted on the Source Academy.",
         "I was given the amazing opportunity to contribute to the development and maintenance of the tool.",
       ],
       img: {
