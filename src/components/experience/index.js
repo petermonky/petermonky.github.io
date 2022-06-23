@@ -29,7 +29,16 @@ const Experience = () => {
               data-aos-offset="40"
               data-aos-anchor-placement="top-bottom"
             >
-              <h2 className="experience__title text-2xl">
+              <h4 className="experience__subtitle text-sm">
+                {`${dayjs(startDate, "MM-YYYY").format("MMM YYYY")}
+                - 
+                ${
+                  endDate
+                    ? dayjs(endDate, "MM-YYYY").format("MMM YYYY")
+                    : "Present"
+                }`}
+              </h4>
+              <h2 className="experience__title text-3xl">
                 {distinction}{" "}
                 <div className="experience__title-organisation-wrapper">
                   @{" "}
@@ -43,15 +52,7 @@ const Experience = () => {
                   </a>
                 </div>
               </h2>
-              <h4 className="experience__subtitle text-sm">
-                {`${dayjs(startDate, "MM-YYYY").format("MMM YYYY")}
-               - 
-              ${
-                endDate
-                  ? dayjs(endDate, "MM-YYYY").format("MMM YYYY")
-                  : "Present"
-              }`}
-              </h4>
+
               <ul className="experience__detail-container">
                 {details.map((detail, idx) => (
                   <li key={idx} className="experience__detail text-lg">

@@ -30,9 +30,13 @@
   }
 
   &__subtitle {
-    margin-top: 8px;
+    margin-bottom: 6px;
     font-weight: normal;
     color: #99aab5;
+
+    @media only screen and (min-width: $desktop) {
+      margin-bottom: 8px;
+    }
   }
 
   &__detail-container {
