@@ -36,7 +36,7 @@ const Projects = () => {
               data-aos-anchor-placement="top-bottom"
             >
               <div className="projects__project__text">
-                <div className="projects__project__text-title text-2xl">
+                <div className="projects__project__text-title text-3xl">
                   {title}
                 </div>
                 <div className="projects__project__text-description-container">
