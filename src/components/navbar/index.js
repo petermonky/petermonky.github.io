@@ -13,7 +13,7 @@ const Navbar = ({ drawerState }) => {
   return (
     <nav className="navbar">
       <div className="navbar__name noselect text-2xl">Peter</div>
-      <div className="navbar__links text-lg">
+      <div className="navbar__links text-md">
         {links.map(({ title, anchor }) => (
           <AnchorLink key={title} href={`#${anchor}`} offset={80}>
             {title}

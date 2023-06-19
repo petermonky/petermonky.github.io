@@ -26,13 +26,14 @@
     }
 
     a {
-      border-bottom: 2px solid transparent;
+      font-family: Poppins;
+      border-bottom: 1px solid transparent;
       transition: border-bottom 75ms ease;
       font-weight: normal;
       margin-left: 32px;
 
       &:hover {
-        border-color: white;
+        border-color: #2d2323;
       }
     }
   }
@@ -43,7 +44,7 @@
     &-icon {
       path {
         // override default package svg colour
-        stroke: white !important;
+        stroke: #2d2323 !important;
       }
     }
 

@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer__name noselect text-2xl">Peter</div>
       </div>
       <div className="footer__middle-section">
-        <p className="footer__love text-lg">Made with ❤️ by Peter</p>
+        <p className="footer__love text-md">Made with ❤️ by Peter</p>
       </div>
       <div className="footer__right-section">
         <div className="footer__contacts">

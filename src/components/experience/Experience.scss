@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 48px;
+    font-family: Poppins;
 
     @media only screen and (min-width: $desktop) {
       row-gap: 80px;
@@ -12,13 +13,18 @@
   }
 
   &__title {
+    font-weight: 500;
+    color: #373d3f;
+
     &-organisation-wrapper {
+      color: #373d3f;
       @media only screen and (min-width: $tablet) {
         display: inline-block;
       }
     }
 
     &-organisation {
+      color: #373d3f;
       border-bottom: 2px solid transparent;
       transition: border-bottom 75ms ease;
       font-weight: bold;
@@ -32,7 +38,7 @@
   &__subtitle {
     margin-bottom: 6px;
     font-weight: normal;
-    color: #99aab5;
+    color: #707c80;
 
     @media only screen and (min-width: $desktop) {
       margin-bottom: 8px;
@@ -45,11 +51,11 @@
     margin: 0px;
     display: flex;
     flex-direction: column;
-    row-gap: 12px;
+    row-gap: 8px;
     margin-top: 16px;
 
     @media only screen and (min-width: $desktop) {
-      row-gap: 16px;
+      row-gap: 12px;
       margin-top: 20px;
     }
   }
@@ -57,8 +63,8 @@
   &__detail {
     font-weight: normal;
     position: relative;
-    color: #99aab5;
-    line-height: 24px;
+    color: #373d3f;
+    line-height: 28px;
     padding-left: 28px;
 
     @media only screen and (min-width: $desktop) {

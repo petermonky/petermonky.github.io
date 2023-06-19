@@ -36,14 +36,14 @@ const Projects = () => {
               data-aos-anchor-placement="top-bottom"
             >
               <div className="projects__project__text">
-                <div className="projects__project__text-title text-3xl">
+                <div className="projects__project__text-title text-2xl">
                   {title}
                 </div>
                 <div className="projects__project__text-description-container">
                   {descriptions.map((description, idx) => (
                     <p
                       key={idx}
-                      className="projects__project__text-description text-lg"
+                      className="projects__project__text-description text-md"
                     >
                       {description}
                     </p>
@@ -53,7 +53,7 @@ const Projects = () => {
                   {links?.map(({ text, path }, idx) => (
                     <span
                       key={idx}
-                      className="projects__project__text-link text-lg"
+                      className="projects__project__text-link text-md"
                     >
                       <a href={path} target="_blank" rel="noopener noreferrer">
                         {text}

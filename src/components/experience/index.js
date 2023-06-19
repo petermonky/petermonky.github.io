@@ -32,15 +32,14 @@ const Experience = () => {
               <h4 className="experience__subtitle text-sm">
                 {`${dayjs(startDate, "MM-YYYY").format("MMM YYYY")}
                 - 
-                ${
-                  endDate
+                ${endDate
                     ? dayjs(endDate, "MM-YYYY").format("MMM YYYY")
                     : "Present"
-                }`}
+                  }`}
               </h4>
-              <h2 className="experience__title text-3xl">
+              <h2 className="experience__title text-2xl">
                 {distinction}{" "}
-                <div className="experience__title-organisation-wrapper">
+                <span className="experience__title-organisation-wrapper">
                   @{" "}
                   <a
                     href={link}
@@ -50,12 +49,12 @@ const Experience = () => {
                   >
                     {organisation}
                   </a>
-                </div>
+                </span>
               </h2>
 
               <ul className="experience__detail-container">
                 {details.map((detail, idx) => (
-                  <li key={idx} className="experience__detail text-lg">
+                  <li key={idx} className="experience__detail text-md">
                     {detail}
                   </li>
                 ))}

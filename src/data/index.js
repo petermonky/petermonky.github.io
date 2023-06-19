@@ -6,9 +6,10 @@ import {
 
 import MinesweeperImg from '../assets/minesweeper.png';
 import StepperImg from '../assets/stepper.png';
-import StudiusImg from '../assets/studius.png';
 import ThoccImg from '../assets/thocc.png';
 import TinnerImg from '../assets/tinner.png';
+import MinecraftPeggleImg from "../assets/minecraft-peggle.png"
+import PulsepaceImg from "../assets/pulsepace.png"
 
 export const navbar = {
   links: [
@@ -60,8 +61,9 @@ export const experience = {
       link: 'https://www.bytedance.com/',
       startDate: '05-2022',
       details: [
-        'Designing and updating portal website for BytePlus, reducing overhead and improving website functionality.',
-        'Creating in‑house content moderation system from the ground up to internally host marketing content.',
+        'Implementing a referral system for BytePlus that promotes SaaS technologies adopted by businesses globally.',
+        'Designing and updating the portal website for BytePlus, aiming to streamline operations, reduce overhead, and enhance website functionality.',
+        'Developed an in-house content moderation system from scratch to internally manage and host marketing content for BytePlus.',
       ],
     },
     {
@@ -71,8 +73,9 @@ export const experience = {
       startDate: '08-2021',
       endDate: '05-2022',
       details: [
-        'Tutored and graded assignments for a group of 12 students in CS2030S - Programming Methodology II, a course designed to teach the fundamentals of the object-oriented paradigm.',
-        'Tutored and graded assignments for a group of 8 students in CS1101S - Programming Methodology I, a compulsory introductory module for all first-year computer science undergraduates at NUS.',
+        'CS2102 - Database Systems (24 students), a course covers basic concepts and techniques needed to understand, create, and manage database applications',
+        'CS2030S - Programming Methodology II (12 students), a course designed to teach the fundamentals of the object-oriented paradigm.',
+        'CS1101S - Programming Methodology I (8 students), a compulsory introductory module for all first-year computer science undergraduates at NUS.',
       ],
     },
     {
@@ -104,24 +107,38 @@ export const projects = {
   title: 'Projects',
   content: [
     {
-      title: 'Google Minesweeper',
+      title: 'Pulsepace',
       descriptions: [
-        'A web application clone of one of my favourite pastimes, Google Minesweeper.',
-        'The app provides the same features as the original, but with, dare I say, a slicker user interface.',
+        'An immersive and fast-paced rhythm game experience designed for iPadOS using Swift.',
+        'Pulsepace was collaboratively developed, with my involvement focusing on frontend engineering and beatmap designer creation.',
       ],
       img: {
-        src: MinesweeperImg,
-        alt: 'Minesweeper',
+        src: PulsepaceImg,
+        alt: 'Pulsepace',
       },
-      backgroundColour: '#00FF00',
+      backgroundColour: '#330C3A',
       links: [
         {
-          text: 'Try demo',
-          path: 'https://petermonky.github.io/gmsc/',
+          text: 'View code',
+          path: 'https://github.com/PulsePace/PulsePace',
         },
+      ],
+    },
+    {
+      title: 'Minecraft Peggle',
+      descriptions: [
+        'A Swift implementation of the popular hit Peggle for iPadOS in a fresh new Minecraft theme.',
+        'Minecraft Peggle was designed and created independently from the ground-up as part of CS3217.',
+      ],
+      img: {
+        src: MinecraftPeggleImg,
+        alt: 'Minecraft Peggle',
+      },
+      backgroundColour: '#91BFF1',
+      links: [
         {
           text: 'View code',
-          path: 'https://github.com/petermonky/gmsc',
+          path: 'https://github.com/petermonky/minecraft-peggle',
         },
       ],
     },
@@ -166,10 +183,32 @@ export const projects = {
       ],
     },
     {
+      title: 'Google Minesweeper',
+      descriptions: [
+        'A web application clone of one of my favourite pastimes, Google Minesweeper.',
+        'The app faithfully replicates the beloved Google Minesweeper, offering identical features while enhancing the user experience with a sleek and modern interface.',
+      ],
+      img: {
+        src: MinesweeperImg,
+        alt: 'Minesweeper',
+      },
+      backgroundColour: '#00FF00',
+      links: [
+        {
+          text: 'Try demo',
+          path: 'https://petermonky.github.io/gmsc/',
+        },
+        {
+          text: 'View code',
+          path: 'https://github.com/petermonky/gmsc',
+        },
+      ],
+    },
+    {
       title: 'Thocc',
       descriptions: [
-        'Get a feel for a new custom keyboard with Thocc, a web application designed to allow users to customise and play around with a virtual keyboard.',
-        'A WIP project with heavy focus on sensory experience.',
+        'Immerse yourself in the world of custom keyboards with Thocc, an interactive web application that lets users explore and personalize virtual keyboards.',
+        'This work-in-progress project prioritizes delivering a captivating sensory experience to users.',
       ],
       img: {
         src: ThoccImg,
@@ -184,24 +223,6 @@ export const projects = {
         {
           text: 'View code',
           path: 'https://github.com/petermonky/thocc',
-        },
-      ],
-    },
-    {
-      title: 'Studius',
-      descriptions: [
-        'Student-to-tutor matchmaking has never been easier with Studius, a platform specifically designed to connect tutors and tutees.',
-        'Studius is my very first web development project; somewhat wonky, but made with love nonetheless.',
-      ],
-      img: {
-        src: StudiusImg,
-        alt: 'Studius',
-      },
-      backgroundColour: '#6a0dad',
-      links: [
-        {
-          text: 'View code',
-          path: 'https://github.com/petermonky/studius',
         },
       ],
     },

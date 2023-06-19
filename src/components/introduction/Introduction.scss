@@ -26,18 +26,18 @@
       width: 0;
       bottom: 0;
       z-index: 1;
-      background-color: #23272a;
-      border-left: 8px solid transparent;
+      background-color: #f8fcf2;
+      border-left: 2px solid transparent;
       animation: swipe-in 1s cubic-bezier(0.29, 0.13, 0.11, 0.95) 0.5s forwards;
     }
 
     .introduction {
       display: flex;
       flex-direction: column;
-      row-gap: 24px;
+      row-gap: 32px;
 
       @media only screen and (min-width: $desktop) {
-        row-gap: 32px;
+        row-gap: 40px;
       }
 
       * {
@@ -46,6 +46,7 @@
       }
 
       &__description-container {
+        font-family: Poppins;
         display: flex;
         flex-direction: column;
         font-weight: normal;
@@ -59,18 +60,20 @@
       &__description {
         font-weight: normal;
         line-height: 24px;
+        color: #373d3f;
 
         @media only screen and (min-width: $desktop) {
-          line-height: 32px;
+          line-height: 28px;
         }
 
         &__organisation {
           border-bottom: 2px solid transparent;
           transition: border-bottom 75ms ease;
           font-weight: bold;
+          color: #373d3f;
 
           &:hover {
-            border-color: white;
+            border-color: #373d3f;
           }
         }
       }
@@ -84,10 +87,10 @@
         }
 
         svg {
-          font-size: 24px;
+          font-size: 20px;
 
           @media only screen and (min-width: $desktop) {
-            font-size: 28px;
+            font-size: 24px;
           }
         }
       }
@@ -106,7 +109,7 @@
     width: 100%;
     left: 0;
     right: 0;
-    border-color: white;
+    border-color: #321e1e;
   }
   20% {
     width: 100%;
@@ -116,7 +119,7 @@
   80% {
     width: 0%;
     left: 100%;
-    border-color: white;
+    border-color: #321e1e;
   }
   85% {
     width: 0%;

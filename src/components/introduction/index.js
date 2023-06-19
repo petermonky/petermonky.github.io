@@ -18,8 +18,8 @@ const Introduction = () => {
             <h1 className="text-6xl">{title}</h1>
           </div>
           <div className="introduction__description-container">
-            <p className="text-lg introduction__description">{description}</p>
-            <p className="text-lg introduction__description">
+            <p className="text-md introduction__description">{description}</p>
+            <p className="text-md introduction__description">
               {time} {status} @{" "}
               <a
                 href={link}
